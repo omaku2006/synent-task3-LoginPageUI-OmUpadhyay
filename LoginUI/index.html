@@ -4,10 +4,79 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>loginui</title>
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>login</title>
+    <!--
+ !           ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
+ !           ╎                  Google Fonts & Icon                  ╎
+ !           └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div id="image"><div class="img"></div></div>
+      <div id="signIn">
+        <div class="headline"><h3>Sign In</h3></div>
+        <hr class="hr" />
+        <div class="nameContainer">
+          <h6><span class="material-symbols-outlined"> person </span> Name</h6>
+          <div class="inputContainer">
+            <div class="input">
+              <input type="text" name="firstName" id="firstName" placeholder="" />
+              <label for="firstName">First Name</label>
+            </div>
+            <div class="input">
+              <input type="text" name="lastName" id="lastName" placeholder="" />
+              <label for="lastName">Last Name</label>
+            </div>
+          </div>
+        </div>
+        <div class="dobContainer inputContainer col">
+          <h6><span class="material-symbols-outlined"> date_range </span> Date of Birth</h6>
+          <div class="input">
+            <input type="date" name="dob" id="dob" />
+          </div>
+        </div>
+        <div class="emailContainer">
+          <h6><span class="material-symbols-outlined"> mail </span> Email Id</h6>
+          <div class="input">
+            <input type="email" name="email" id="email" placeholder="" />
+            <label for="email">Email Id</label>
+          </div>
+        </div>
+
+        <div class="passwordContainer">
+          <h6><span class="material-symbols-outlined"> password </span> Password</h6>
+          <div class="inputContainer">
+            <div class="input">
+              <input type="password" name="password" id="password" placeholder="" />
+              <label for="password">Password</label>
+            </div>
+            <div class="input">
+              <input type="password" name="confirmPassword" id="confirmPassword" placeholder="" />
+              <label for="confirmPassword">Confirm Password</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button>Sign Up <span class="material-symbols-outlined"> arrow_outward </span></button>
+        </div>
+
+        <hr class="hr" />
+      </div>
+      <div id="signUp"></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

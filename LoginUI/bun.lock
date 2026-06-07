@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "loginui",
+      "name": "login",
       "devDependencies": {
         "vite": "^8.0.12",
       },
