@@ -22,6 +22,8 @@
 
   --heading-font: 'DM Serif Display', serif;
   --body-font: 'DM Sans', sans-serif;
+
+  --duration: 800ms;
 }
 
 body {
@@ -83,11 +85,13 @@ hr {
 }
 
 #app {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+
+  transition: all var(--duration) ease;
 }
 
 /*
@@ -116,6 +120,12 @@ hr {
 */
 
 #signUp,
+#signIn,
+#image {
+  flex-shrink: 0;
+}
+
+#signUp,
 #signIn {
   width: 50vw;
   height: 100vh;
@@ -127,6 +137,7 @@ hr {
   align-items: center;
   overflow-x: hidden;
   overflow-y: scroll;
+  transition: all var(--duration) ease;
 }
 
 #signUp .nameContainer,
@@ -264,8 +275,33 @@ hr {
   color: var(--color-accent);
 }
 
-#signIn {
-  display: none;
+/* #signIn, */
+/* #signUp { */
+/*   width: 0vw; */
+/*   transition: all 1s ease-in-out; */
+/* } */
+/**/
+
+#app.signInActive {
+  transform: translateX(-50vw);
+}
+
+#app.signInActive #signIn {
+  opacity: 1;
+}
+#app.signInActive #signUp {
+  opacity: 0;
+}
+
+#app.signUpActive {
+  transform: translateX(0);
+}
+
+#app.signUpActive #signIn {
+  opacity: 0;
+}
+#app.signUpActive #signUp {
+  opacity: 1;
 }
 
 /*

@@ -23,7 +23,12 @@
     />
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="signInActive">
+      <!--
+ !   ╭───────────────────────────────────────────────────────╮
+ !   │ Sign Up                                               │
+ !   ╰───────────────────────────────────────────────────────╯
+-->
       <div id="signUp">
         <div class="headline"><h3>Sign Up</h3></div>
         <hr class="hr" />
@@ -74,14 +79,23 @@
 
         <hr class="hr" />
         <div class="below-btn single">
-          <button>
+          <button id="switchToSignIn">
             Already Registered? Login
             <span class="material-symbols-outlined"> arrow_circle_right </span>
           </button>
         </div>
       </div>
-
+      <!--
+ !   ╭───────────────────────────────────────────────────────╮
+ !   │ Image                                                 │
+ !   ╰───────────────────────────────────────────────────────╯
+-->
       <div id="image"><div class="img"></div></div>
+      <!--
+ !   ╭───────────────────────────────────────────────────────╮
+ !   │ Sign In                                               │
+ !   ╰───────────────────────────────────────────────────────╯
+-->
       <div id="signIn">
         <div class="headline"><h3>Sign In</h3></div>
         <hr class="hr" />
@@ -108,7 +122,7 @@
 
         <hr class="hr" />
         <div class="below-btn">
-          <button>
+          <button id="switchToSignUp">
             New Here? Create Account
             <span class="material-symbols-outlined"> arrow_circle_left </span>
           </button>
