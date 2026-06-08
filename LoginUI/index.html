@@ -54,8 +54,8 @@
         <div class="emailContainer">
           <h6><span class="material-symbols-outlined"> mail </span> Email Id</h6>
           <div class="input">
-            <input type="email" name="email" id="email" placeholder="" />
-            <label for="email">Email Id</label>
+            <input type="email" name="email" id="signUpEmail" placeholder="" />
+            <label for="signUpEmail">Email Id</label>
           </div>
         </div>
 
@@ -63,8 +63,8 @@
           <h6><span class="material-symbols-outlined"> password </span> Password</h6>
           <div class="inputContainer">
             <div class="input">
-              <input type="password" name="password" id="password" placeholder="" />
-              <label for="password">Password</label>
+              <input type="password" name="password" id="signUpPassword" placeholder="" />
+              <label for="signUpPassword">Password</label>
             </div>
             <div class="input">
               <input type="password" name="confirmPassword" id="confirmPassword" placeholder="" />
@@ -74,7 +74,9 @@
         </div>
 
         <div class="btn">
-          <button>Sign Up <span class="material-symbols-outlined"> arrow_outward </span></button>
+          <button id="signUpButton">
+            Sign Up <span class="material-symbols-outlined"> arrow_outward </span>
+          </button>
         </div>
 
         <hr class="hr" />
@@ -90,7 +92,11 @@
  !   │ Image                                                 │
  !   ╰───────────────────────────────────────────────────────╯
 -->
-      <div id="image"><div class="img"></div></div>
+      <div id="image">
+        <div class="img">
+          <q>Every sunset brings the promis of a new <span>dawn</span></q>
+        </div>
+      </div>
       <!--
  !   ╭───────────────────────────────────────────────────────╮
  !   │ Sign In                                               │
@@ -102,22 +108,24 @@
         <div class="emailContainer">
           <h6><span class="material-symbols-outlined"> mail </span> Email Id</h6>
           <div class="input">
-            <input type="email" name="email" id="email" placeholder="" />
-            <label for="email">Email Id</label>
+            <input type="email" name="email" id="signInEmail" placeholder="" />
+            <label for="signInEmail">Email Id</label>
           </div>
         </div>
         <div class="passwordContainer">
           <h6><span class="material-symbols-outlined"> password </span> Password</h6>
           <div class="inputContainer single">
             <div class="input">
-              <input type="password" name="password" id="password" placeholder="" />
-              <label for="password">Password</label>
+              <input type="password" name="password" id="signInPassword" placeholder="" />
+              <label for="signInPassword">Password</label>
             </div>
           </div>
         </div>
 
         <div class="btn">
-          <button>Sign In <span class="material-symbols-outlined"> arrow_outward </span></button>
+          <button id="signInButton">
+            Sign In <span class="material-symbols-outlined"> arrow_outward </span>
+          </button>
         </div>
 
         <hr class="hr" />
@@ -126,10 +134,18 @@
             New Here? Create Account
             <span class="material-symbols-outlined"> arrow_circle_left </span>
           </button>
-          <button>Forgot Password?</button>
+          <button id="forgotPass">Forgot Password?</button>
         </div>
       </div>
+
+      <!--
+ !   ╭───────────────────────────────────────────────────────╮
+ !   │ Show Detainls                                         │
+ !   ╰───────────────────────────────────────────────────────╯
+-->
+      <div id="showDetails"></div>
     </div>
+    <h6 id="model"></h6>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
