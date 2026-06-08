@@ -111,10 +111,11 @@ hr {
 
 /*
  *          ╒═════════════════════════════════════════════════════════╕
- *                                 Sign In Part
+ *                                 Sign Up Part
  *          ╘═════════════════════════════════════════════════════════╛
 */
 
+#signUp,
 #signIn {
   width: 50vw;
   height: 100vh;
@@ -128,21 +129,22 @@ hr {
   overflow-y: scroll;
 }
 
-#signIn .nameContainer,
-#signIn .dobContainer,
-#signIn .emailContainer,
-#signIn .passwordContainer,
+#signUp .nameContainer,
+#signUp .dobContainer,
+.emailContainer,
+.passwordContainer,
 .btn {
   width: 50%;
 }
 
-#signIn .inputContainer {
+.inputContainer {
   position: relative;
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
 
+#signUp h6,
 #signIn h6 {
   width: 100%;
   display: flex;
@@ -150,28 +152,30 @@ hr {
   margin-bottom: 16px;
 }
 
-#signIn .material-symbols-outlined {
+.material-symbols-outlined {
   font-size: calc(1.5 * clamp(1.125rem, 1.0227rem + 0.4091vi, 1.35rem));
   padding-right: 12px;
 }
 
-#signIn .input {
+.input {
   position: relative;
   margin-bottom: 28px;
+  width: 100%;
 }
 
-#signIn .input label {
+.input label {
   position: absolute;
   left: 8px;
   top: 50%;
   padding: 0 10px;
   background-color: var(--color-background);
   transform: translateY(-50%);
+  cursor: text;
   color: color-mix(in srgb, var(--color-primary) 60%, transparent 40%);
   transition: 100ms all ease-in-out;
 }
 
-#signIn .input input {
+.input input {
   width: 100%;
   outline: none;
   padding: 12px;
@@ -179,20 +183,24 @@ hr {
   border-radius: var(--sm-scale);
 }
 
-#signIn .input:focus-within label,
-#signIn .input input:not(:placeholder-shown) + label {
+.input:focus-within label,
+.input input:not(:placeholder-shown) + label {
   font-size: 12px;
   top: 0;
   left: 16px;
   color: var(--color-primary);
 }
 
-#signIn .inputContainer.col {
+.inputContainer.col {
   flex-direction: column;
   gap: 0;
 }
 
-#signIn .btn button {
+.inputContainer.single {
+  width: 100%;
+}
+
+.btn button {
   padding: 16px 24px;
   width: 100%;
   display: flex;
@@ -201,29 +209,67 @@ hr {
   align-items: center;
   border-radius: var(--sm-scale);
   outline: none;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   background-color: var(--color-primary);
   color: var(--color-surface);
   margin: 12px 0;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
-#signIn .btn button span {
+.btn button span {
   font-size: calc(0.8 * clamp(1.125rem, 1.0227rem + 0.4091vi, 1.35rem));
   margin: 0 8px;
 }
 
-#signIn .btn button:hover {
-  border: 2px solid var(--color-primary);
+.btn button:hover {
+  border: 3px solid var(--color-primary);
   background-color: var(--color-background);
   color: var(--color-primary);
 }
 
-/*
- *          ╒═════════════════════════════════════════════════════════╕
- *                                 Sign Up Part
- *          ╘═════════════════════════════════════════════════════════╛
-*/
-#signUp {
+.below-btn {
+  display: flex;
+  width: 73%;
+  gap: var(--md-scale);
+}
+
+.below-btn.single {
+  width: 40%;
+}
+
+.below-btn button {
+  padding: 16px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  border-radius: var(--sm-scale);
+  outline: none;
+  border: 3px solid transparent;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  margin: 12px 0;
+  transition: all 200ms ease-in-out;
+}
+
+.below-btn button span {
+  font-size: calc(1 * clamp(1.125rem, 1.0227rem + 0.4091vi, 1.35rem)) !important;
+  margin: 0 8px;
+}
+
+.below-btn button:hover {
+  border: 3px solid var(--color-accent);
+  background-color: var(--color-background);
+  color: var(--color-accent);
+}
+
+#signIn {
   display: none;
 }
+
+/*
+ *          ╒═════════════════════════════════════════════════════════╕
+ *                                 Sign In Part
+ *          ╘═════════════════════════════════════════════════════════╛
+*/

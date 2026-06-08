@@ -24,9 +24,8 @@
   </head>
   <body>
     <div id="app">
-      <div id="image"><div class="img"></div></div>
-      <div id="signIn">
-        <div class="headline"><h3>Sign In</h3></div>
+      <div id="signUp">
+        <div class="headline"><h3>Sign Up</h3></div>
         <hr class="hr" />
         <div class="nameContainer">
           <h6><span class="material-symbols-outlined"> person </span> Name</h6>
@@ -74,8 +73,48 @@
         </div>
 
         <hr class="hr" />
+        <div class="below-btn single">
+          <button>
+            Already Registered? Login
+            <span class="material-symbols-outlined"> arrow_circle_right </span>
+          </button>
+        </div>
       </div>
-      <div id="signUp"></div>
+
+      <div id="image"><div class="img"></div></div>
+      <div id="signIn">
+        <div class="headline"><h3>Sign In</h3></div>
+        <hr class="hr" />
+        <div class="emailContainer">
+          <h6><span class="material-symbols-outlined"> mail </span> Email Id</h6>
+          <div class="input">
+            <input type="email" name="email" id="email" placeholder="" />
+            <label for="email">Email Id</label>
+          </div>
+        </div>
+        <div class="passwordContainer">
+          <h6><span class="material-symbols-outlined"> password </span> Password</h6>
+          <div class="inputContainer single">
+            <div class="input">
+              <input type="password" name="password" id="password" placeholder="" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button>Sign In <span class="material-symbols-outlined"> arrow_outward </span></button>
+        </div>
+
+        <hr class="hr" />
+        <div class="below-btn">
+          <button>
+            New Here? Create Account
+            <span class="material-symbols-outlined"> arrow_circle_left </span>
+          </button>
+          <button>Forgot Password?</button>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
