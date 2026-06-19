@@ -2,6 +2,10 @@
 
 A modern and responsive login/signup page with user authentication functionality. Features sign up, sign in, forgot password, and user profile display with data persistence using localStorage.
 
+<img width="1920" height="1080" alt="Screenshot_2026-06-19-19-47-32" src="https://github.com/user-attachments/assets/a56aa072-9521-46d1-a971-cf42a17edc06" />
+<img width="1920" height="1080" alt="Screenshot_2026-06-19-19-45-56" src="https://github.com/user-attachments/assets/c489ad8d-3363-4a42-afdb-e38f2441ac4e" />
+
+
 ## Features
 
 - **Sign Up:** Create a new account with name, date of birth, email, and password
